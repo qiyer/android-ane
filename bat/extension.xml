@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+	<id>com.ny.ANEManager</id>
+	<versionNumber>1.1</versionNumber>
+
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>njsdklib.jar</nativeLibrary>
+				<initializer>com.njsdklib.extensions.ErayExtension</initializer>
+			</applicationDeployment>
+		</platform>
+	</platforms>
+</extension>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Class name of game entry -->
+    <string name="hh_splash_successed_name">com.tpad.app.HAdTest</string>
+    <string name="hh_splash_failed_name">com.tpad.app.HAdTest2</string>
+</resources>

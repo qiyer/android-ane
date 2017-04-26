@@ -1,0 +1,17 @@
+<platform xmlns="http://ns.adobe.com/air/extension/4.0">
+	<description>An optional description.</description>
+	<copyright>2011 (optional)</copyright>
+	<packagedDependencies>
+		<packagedDependency>android-query-full.0.26.7.jar</packagedDependency>
+		<packagedDependency>android-support-v4.jar</packagedDependency>
+		<packagedDependency>glide-3.7.0.jar</packagedDependency>
+		<packagedDependency>Lotuseed_Android_SDK_1.4.3.1.1.jar</packagedDependency>
+		<packagedDependency>ny_sdk_4.6.0.0.jar</packagedDependency>
+	</packagedDependencies>
+	<packagedResources> 
+        <packagedResource> 
+        	<packageName>com.njsdklib.extensions.ErayExtension</packageName> 
+        	<folderName>res</folderName> 
+        </packagedResource> 
+    </packagedResources>
+</platform>

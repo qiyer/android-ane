@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/ny/ane/BaseInterface" mod="1493041316352" signatureChecksum="2773833761" >
+        <def id="com.ny.ane:BaseInterface" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="com/ny/ane/NYSDKInterface" mod="1493042611292" signatureChecksum="3352408310" >
+        <def id="com.ny.ane:NYSDKInterface" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="com.ny.ane:BaseInterface" type="i" /> 
+      </script>
+      <script name="com/ny/ane/ANEHelper" mod="1493041415904" signatureChecksum="2985077622" >
+        <def id="com.ny.ane:ANEHelper" /> 
+        <dep id="com.ny.ane:ANESyncEvent" type="e" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="com.ny.ane:NYSDKInterface" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="com.ny.ane:ANESyncEvent" type="s" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="com.ny.ane:NYSDKInterface" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="_591fbaf4292ece5f99402ba9c7c4f10b73b05a87ba42bdad36b12df516846b8e_flash_display_Sprite" mod="1493042647182" signatureChecksum="1500216233" >
+        <def id="_591fbaf4292ece5f99402ba9c7c4f10b73b05a87ba42bdad36b12df516846b8e_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="com/ny/ane/ANESyncEvent" mod="1493041316346" signatureChecksum="3404089760" >
+        <def id="com.ny.ane:ANESyncEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="0b84fdd307aa2cdec654d7ffa943876cf8c9f45447de470dee315044892a2af2"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
