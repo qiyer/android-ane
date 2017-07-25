@@ -1,5 +1,7 @@
 package com.njsdklib.ane;
 
+import android.util.Log;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -24,40 +26,48 @@ public class ANEadBannerAdd implements FREFunction {
 			_context.dispatchStatusEventAsync("ANEadIntervalShow", e.toString());
 			return null;
 		}
+		Log.i("ANE", "ANEadBannerAdd");
 		Tool.adBannerAdd(_context.getActivity(), pos, new Listener() {
 			@Override
 			public void onAdClick(String s) {
-				_context.dispatchStatusEventAsync("onAdClick", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdClick",s);
 			}
 
 			@Override
 			public void onAdClosed(String s) {
-				_context.dispatchStatusEventAsync("onAdClosed", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdClosed",s);
 			}
 
 			@Override
 			public void onAdFailed(String s) {
-				_context.dispatchStatusEventAsync("onAdFailed", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdFailed",s);
 			}
 
 			@Override
 			public void onAdInitFailed(String s) {
-				_context.dispatchStatusEventAsync("onAdInitFailed", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdInitFailed",s);
 			}
 
 			@Override
 			public void onAdInitSucessed(String s) {
-				_context.dispatchStatusEventAsync("onAdInitSucessed", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdInitSucessed",s);
 			}
 
 			@Override
 			public void onAdNoAd(String s) {
-				_context.dispatchStatusEventAsync("onAdNoAd", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdNoAd",s);
 			}
 
 			@Override
 			public void onAdPresent(String s) {
-				_context.dispatchStatusEventAsync("onAdPresent", s);
+				Log.i("ANE", s);
+				_context.dispatchStatusEventAsync("onAdPresent",s);
 			}
 		});
 		return b;

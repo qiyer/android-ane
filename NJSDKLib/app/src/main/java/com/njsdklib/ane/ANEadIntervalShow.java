@@ -1,5 +1,7 @@
 package com.njsdklib.ane;
 
+import android.util.Log;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -24,6 +26,7 @@ public class ANEadIntervalShow implements FREFunction {
 			_context.dispatchStatusEventAsync("ANEadIntervalShow", e.toString());
 			return null;
 		}
+		Log.i("ANE", "ANEadIntervalShow");
 		Tool.adIntervalShow(_context.getActivity(),num);
 		_context.dispatchStatusEventAsync("ANEadIntervalShow","success");
 		return b;

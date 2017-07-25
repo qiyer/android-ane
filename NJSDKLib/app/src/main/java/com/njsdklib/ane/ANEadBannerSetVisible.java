@@ -1,5 +1,7 @@
 package com.njsdklib.ane;
 
+import android.util.Log;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -25,6 +27,7 @@ public class ANEadBannerSetVisible implements FREFunction {
 			_context.dispatchStatusEventAsync("ANEadBannerSetVisible", e.toString());
 			return null;
 		}
+		Log.i("ANE", "ANEadBannerSetVisible");
 		Tool.adBannerSetVisible(visible);
 		_context.dispatchStatusEventAsync("ANEadBannerSetVisible","success");
 		return b;

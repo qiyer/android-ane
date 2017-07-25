@@ -1,5 +1,7 @@
 package com.njsdklib.ane;
 
+import android.util.Log;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -14,7 +16,7 @@ public class ANEadBannerRemove implements FREFunction {
 		// TODO Auto-generated method stub
 		_context = (ErayCommonJavaContext) context;
 		FREObject b = null;
-
+		Log.i("ANE", "ANEadBannerRemove");
 		Tool.adBannerRemove(_context.getActivity());
 		_context.dispatchStatusEventAsync("ANEadBannerRemove","success");
 		return b;

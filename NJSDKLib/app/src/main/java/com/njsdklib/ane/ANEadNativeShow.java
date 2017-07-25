@@ -1,5 +1,7 @@
 package com.njsdklib.ane;
 
+import android.util.Log;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -30,6 +32,7 @@ public class ANEadNativeShow implements FREFunction {
 			_context.dispatchStatusEventAsync("ANEadNativeShow", e.toString());
 			return null;
 		}
+		Log.i("ANE", "ANEadNativeShow");
 		Tool.adNativeShow(_context.getActivity(),(float)px,(float)py,(float)pw,(float)ph);
 		_context.dispatchStatusEventAsync("ANEadNativeShow","success");
 		return b;

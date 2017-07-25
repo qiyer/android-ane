@@ -1,5 +1,7 @@
 package com.njsdklib.ane;
 
+import android.util.Log;
+
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
@@ -14,7 +16,7 @@ public class ANEadNativeRemove implements FREFunction {
 		// TODO Auto-generated method stub
 		_context = (ErayCommonJavaContext) context;
 		FREObject b = null;
-
+		Log.i("ANE", "ANEadNativeRemove");
 		Tool.adNativeRemove(_context.getActivity());
 		_context.dispatchStatusEventAsync("ANEadNativeRemove","success");
 		return b;

@@ -18,8 +18,8 @@ package com.ny.ane
 			extContext.call("adIntervalInit");
 		}
 		
-		public function adIntervalShow():void{
-			extContext.call("adIntervalShow");
+		public function adIntervalShow(pos: int = 0):void{
+			extContext.call("adIntervalShow",pos);
 		}
 		
 		public function adBannerAdd(pos: int = 0):void{
